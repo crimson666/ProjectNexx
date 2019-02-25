@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    tools:context="com.example.stealth.navigationdrawer1.post_page">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradientbackground2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="just some random title"
+                android:textColor="#ffff"
+                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="by Ankur biswas"
+                android:textColor="#d9d9d9"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30sp"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="30dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="10dp"
+                   android:textColor="#000"
+                    android:textSize="17dp"
+                    android:text="he player takes control of a single armored vehicle of their choice, and is placed into a battle on a random map. The player has control over the vehicle's movement, firing, and can communicate with allied players through typed or voice chat. A simple random match is won either by destroying all"/>
+
+            </LinearLayout>
+
+
+            <TextView
+
+                android:id="@+id/read_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="READ MORE"
+                android:textColor="#0066ff"
+                android:paddingTop="40dp"
+                android:layout_gravity="center_horizontal"
+
+                android:textSize="20dp"/>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                android:paddingLeft="50dp"
+                    android:id="@+id/post_fb"
+                    android:layout_weight="1"
+                    android:onClick="click1"
+                    android:src="@drawable/facebook"
+                    />
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:id="@+id/post_linkedin"
+                    android:layout_weight="1"
+                    android:src="@drawable/linkedin"
+                    android:onClick="click2"
+                    />
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:paddingRight="50dp"
+                    android:id="@+id/post_twitter"
+                    android:layout_weight="1"
+                    android:src="@drawable/twitter"
+                    android:onClick="click3"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

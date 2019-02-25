@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title=" HOME" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/person"
+            android:title="PROFILE" />
+
+
+        <item
+            android:id="@+id/follower"
+            android:icon="@drawable/follower"
+            android:title="FOLLOWER" />
+
+
+        <item
+            android:id="@+id/following"
+            android:icon="@drawable/following"
+            android:title="FOLLOWING" />
+
+        <item
+            android:id="@+id/community"
+            android:icon="@drawable/community"
+            android:title="COMMUNITY" />
+
+        <item
+            android:id="@+id/carrier"
+            android:icon="@drawable/work"
+            android:title="CAREER" />
+        <item
+            android:id="@+id/admin"
+            android:icon="@drawable/admin_star"
+            android:title="ADMIN" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title=" LOGOUT"
+            />
+
+    </group>
+
+
+
+
+
+
+
+
+
+</menu>

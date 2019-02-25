@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.example.stealth.navigationdrawer1.job_details">
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/job_img"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jr.Developer,SOFTWARE"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:id="@+id/dept"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5dp"
+               android:background="#f2f2f2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JOB ID "
+                    android:textSize="15dp"
+                    android:paddingLeft="25dp"
+
+
+                    android:textColor="#000"/>
+
+           </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="JOB001"
+                    android:textSize="17dp"
+
+                    android:id="@+id/jobid"
+                    />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="#f2f2f2"
+
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="ELIGIBLE"
+                    android:textSize="15dp"
+                    android:paddingLeft="25dp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eligibility"
+
+                    android:text="YES"
+                    android:textSize="17dp"
+                    android:paddingLeft="25dp"
+                    android:textStyle="bold"
+
+
+                    android:textColor="#27ae60"/>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="REQUIRED SKILLS"
+                android:background="#f2f2f2"
+                android:textSize="15dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000"/>
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JAVA,C#,HTML,PHP"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="25dp"
+                android:id="@+id/skill"/>
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f2f2f2"
+                    android:layout_marginTop="10dp"
+                    android:text="EMPLOYEE SKILLS"
+                    android:textSize="15dp"
+                    android:paddingLeft="25dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_skill"
+                    android:layout_marginTop="10dp"
+
+                    android:text="JAVA,C,HTML"
+                    android:textSize="17dp"
+                    android:paddingLeft="25dp"
+                    />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:layout_marginTop="10dp"
+                android:text="QUALIFIED SKILLS"
+                android:textSize="15dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/quali_skill"
+                android:layout_marginTop="10dp"
+
+                android:text="JAVA,C,HTML"
+                android:textSize="17dp"
+                android:paddingLeft="25dp"
+               />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:layout_marginTop="10dp"
+                android:text="ACCEPTENCE RATE"
+                android:textSize="15dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:progressBackgroundTint="#2ecc71"
+                android:progressTint="#27ae60"
+                android:id="@+id/progress_bar"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="POST DETAILS"
+                android:background="#f2f2f2"
+                android:textSize="15dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000"/>
+
+
+            <TextView
+        android:id="@+id/job_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="10dp"
+
+        android:textSize="17dp"
+        android:text="he player takes control of a single armored vehicle of their choice, and is placed into a battle on a random map. The player has control over the vehicle's movement, firing, and can communicate with allied players through typed or voice chat. A simple random match is won either by destroying all"/>
+
+
+
+
+    <Button
+
+        android:id="@+id/button1"
+        style="@style/buttons_style2"
+        android:layout_width="280dp"
+        android:text="APPLY"
+        android:layout_gravity="center"
+        android:onClick="apply"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        />
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    tools:context="com.example.stealth.navigationdrawer1.edit_profile">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:background="@drawable/gradientbackground2"
+                    android:orientation="vertical">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/male" />
+
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+
+                        android:text="BIJOY BSAU"
+                        android:textColor="#fff"
+                        android:textSize="29sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="230dp"
+                    android:background="#F66274">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="230dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp">
+
+                    /*phone*/
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:text="Mobile"
+                            android:textSize="19dp"
+                            android:id="@+id/txt_mobile"/>
+
+                        <EditText
+
+                            android:id="@+id/phone"
+                            style="@style/edit_txt2"
+                            android:layout_width="230dp"
+                            android:text="Phone"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+                    /*email*/
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:text="Email"
+                            android:textSize="19dp"
+                            android:id="@+id/txt_email"/>
+
+                        <EditText
+
+                            android:id="@+id/email"
+                            style="@style/edit_txt2"
+                            android:layout_width="230dp"
+                            android:text="Email"
+
+                            />
+
+                    </LinearLayout>
+
+                    /*address*/
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="20dp"
+                            android:text="Address"
+                            android:id="@+id/txt_address"
+                            android:textSize="19dp" />
+
+                        <EditText
+
+                            android:id="@+id/address"
+                            style="@style/edit_txt3"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            android:text="address"
+
+                            />
+
+                    /*summary*/
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="20dp"
+
+                            android:text="Summary"
+                            android:id="@+id/txt_summary"
+                            android:textSize="19dp" />
+
+                        <EditText
+
+                            android:id="@+id/summary"
+                            style="@style/edit_txt3"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="summary"
+
+                            />
+
+                    /*skills*/
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="20dp"
+
+                        android:text="Skill Sets"
+                        android:id="@+id/txt_skill"
+                        android:textSize="19dp" />
+
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="19dp"/>
+
+                    <EditText
+
+                        android:id="@+id/skill"
+                        style="@style/edit_txt3"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                       android:hint="Enter your Skills"
+
+                        />
+
+
+
+
+                    /*fb*/
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="20dp"
+                            android:text="FaceBook"
+                            android:id="@+id/txt_fb"
+                            android:textSize="19dp" />
+
+                        <EditText
+
+                            android:id="@+id/facebook"
+                            style="@style/edit_txt2"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Facebook"
+
+                            />
+
+
+
+                    /*linkedin*/
+
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="20dp"
+                            android:text="Linkedin"
+                            android:id="@+id/txt_linkedin"
+                            android:textSize="19dp" />
+
+                        <EditText
+
+                            android:id="@+id/linkedin"
+                            style="@style/edit_txt2"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="linkedin"
+
+                            />
+
+
+
+
+                    <Button
+
+                        android:id="@+id/button1"
+                        style="@style/buttons_style2"
+                        android:layout_width="280dp"
+                        android:text="UPDATE"
+                        android:layout_gravity="center"
+                        android:onClick="update"
+
+
+                        />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

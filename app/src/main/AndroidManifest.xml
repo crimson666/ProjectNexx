@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.stealth.navigationdrawer1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/nexval_logo"
+        android:label="NEXVAL"
+        android:roundIcon="@drawable/nexval_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="NEXVAL"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".login"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".rec_dept" />
+        <activity
+            android:name=".me_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity_follower" />
+        <activity android:name=".activity_following" />
+        <activity
+            android:name=".edit_profile"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".firebase.FcmInstanceIdService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".firebase.FcmMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".community"
+            android:label="@string/title_activity_community"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".post_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".my_post" />
+        <activity
+            android:name=".jobpost"
+            android:label="JOBS" />
+        <activity android:name=".job_details" />
+        <activity android:name=".admin_home" />
+        <activity android:name=".admin_jobpost" />
+        <activity android:name=".admin_joblist" />
+        <activity android:name=".admin_jobapply"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1072089889287",
+    "firebase_url": "https://nexval-e3f46.firebaseio.com",
+    "project_id": "nexval-e3f46",
+    "storage_bucket": "nexval-e3f46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072089889287:android:6972420ff4653b03",
+        "android_client_info": {
+          "package_name": "com.example.stealth.navigationdrawer1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072089889287-cdpmscl5ovbmqaome9lt0n5b8d2u557b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN7qHGynSwAk1GXdPJopbL-6zKT6pyM1c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
